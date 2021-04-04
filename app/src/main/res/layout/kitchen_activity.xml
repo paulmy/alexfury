@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kit"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Chronometer
+                android:id="@+id/chronos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.1">
+
+            <ImageButton
+                android:id="@+id/onFridge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/button_background"
+                android:onClick="onFridge"
+                android:src="@drawable/fridge" />
+
+            <com.example.fury.MyDraw
+                android:id="@+id/furystandart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginLeft="105dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="60dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar_happy"
+                    style="@style/Widget.ProgressBar.Vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:max="10"
+                    android:progressTint="#80ff1f" />
+
+                <ImageButton
+                    android:id="@+id/btn_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    android:onClick="Room"
+                    android:src="@drawable/roomlogo" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar_hungry"
+                    style="@style/Widget.ProgressBar.Vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:max="10"
+                    android:progressTint="#80ff1f" />
+
+                <ImageButton
+                    android:id="@+id/btn_kitchen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    android:onClick="Kitchen"
+                    android:src="@drawable/kitlogo" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar_clean"
+                    style="@style/Widget.ProgressBar.Vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:max="10"
+                    android:progressTint="#80ff1f" />
+
+                <ImageButton
+                    android:id="@+id/btn_bath"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    android:onClick="Bath"
+                    android:src="@drawable/bathlogo" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar_tired"
+                    style="@style/Widget.ProgressBar.Vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:max="10"
+                    android:progressTint="#80ff1f" />
+
+                <ImageButton
+                    android:id="@+id/btn_sleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    android:onClick="Sleep"
+                    android:src="@drawable/sleeplogo" />
+
+
+            </FrameLayout>
+
+
+            <!--<ImageButton
+                android:id="@+id/btn_pet"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="Pet"
+                android:src="@drawable/pet" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
